@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/roll.css">
+</head>
+<body>
+
+<div class="carousel" id="carousel">
+    <ul class="img_wrap">
+        <li><a href="javascript:;"><img src="img/1_0.jpg"></a></li>
+        <li><a href="javascript:;"><img src="img/1_1.jpg"></a></li>
+        <li><a href="javascript:;"><img src="img/1_2.jpg"></a></li>
+    </ul>
+    <ul class="btn_wrap">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <a href="javascript:;" class="prev">上一个</a>
+    <a href="javascript:;" class="next">下一个</a>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/roll.js"></script>
+<script type="text/javascript">
+    roll.move({
+        wraper: 'carousel',
+        imgWrap: 'img_wrap',
+        dotWrap: 'btn_wrap',
+        prev: 'prev',
+        next: 'next',
+        activeClass: 'active',
+        intervalTime: 3000,
+        animateTime: 500
+    });
+</script>
+</body>
+</html>
